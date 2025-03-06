@@ -438,7 +438,7 @@ public class Program
 		else
 		{
 			Console.WriteLine("Please choose a valid answer");
-			Playagain();
+			PlayagainTTT(Board1);
 		}
 	}
 
