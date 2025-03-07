@@ -2,7 +2,7 @@ using System;
 
 public class Program
 {
-
+	
 
 	public static void Main()
 	{
@@ -37,7 +37,7 @@ public class Program
 	public static void TTT(string[] Board1)
 	{
 		Player1(Board1);
-		Player2(Board1);
+		Player2(Board1);		
 	}
 
 
@@ -48,7 +48,7 @@ public class Program
 		TTTBoard(Board1);
 		FirstPlayer = Console.ReadLine();
 
-		//change strings in the arrays
+			//change strings in the arrays
 
 		if (FirstPlayer.ToLower() == Board1[0])
 		{
@@ -65,7 +65,7 @@ public class Program
 		{
 			Board1[2] = "X";
 			WinCON(Board1);
-
+	
 		}
 		else if (FirstPlayer.ToLower() == Board1[3])
 		{
@@ -189,52 +189,52 @@ public class Program
 
 	public static void WinCON(string[] Board1)
 	{
-		if (Board1[0] == "X" && Board1[4] == "X" && Board1[8] == "X")
-		{
+		if (Board1[0] == "X" && Board1[2] == "X" && Board1[3] == "X")
+        {
 			TTTBoard(Board1);
-			Console.WriteLine("Player 1 wins");
+            Console.WriteLine("Player 1 wins");
 			PlayagainTTT(Board1);
-		}
-		if (Board1[0] == "X" && Board1[1] == "X" && Board1[2] == "X")
-		{
-			TTTBoard(Board1);
-			Console.WriteLine("Player 1 wins");
-			PlayagainTTT(Board1);
-		}
+        }
 		if (Board1[3] == "X" && Board1[4] == "X" && Board1[5] == "X")
 		{
 			TTTBoard(Board1);
-			Console.WriteLine("Player 1 wins");
+            Console.WriteLine("Player 1 wins");
 			PlayagainTTT(Board1);
 		}
 		if (Board1[6] == "X" && Board1[7] == "X" && Board1[8] == "X")
 		{
 			TTTBoard(Board1);
-			Console.WriteLine("Player 1 wins");
+            Console.WriteLine("Player 1 wins");
 			PlayagainTTT(Board1);
 		}
 		if (Board1[0] == "X" && Board1[3] == "X" && Board1[6] == "X")
 		{
 			TTTBoard(Board1);
-			Console.WriteLine("Player 1 wins");
+            Console.WriteLine("Player 1 wins");
 			PlayagainTTT(Board1);
 		}
 		if (Board1[1] == "X" && Board1[4] == "X" && Board1[7] == "X")
 		{
 			TTTBoard(Board1);
-			Console.WriteLine("Player 1 wins");
+            Console.WriteLine("Player 1 wins");
 			PlayagainTTT(Board1);
 		}
 		if (Board1[2] == "X" && Board1[5] == "X" && Board1[8] == "X")
 		{
 			TTTBoard(Board1);
-			Console.WriteLine("Player 1 wins");
+            Console.WriteLine("Player 1 wins");
+			PlayagainTTT(Board1);
+		}
+		if (Board1[0] == "X" && Board1[4] == "X" && Board1[8] == "X")
+		{
+			TTTBoard(Board1);
+            Console.WriteLine("Player 1 wins");
 			PlayagainTTT(Board1);
 		}
 		if (Board1[2] == "X" && Board1[4] == "X" && Board1[6] == "X")
 		{
 			TTTBoard(Board1);
-			Console.WriteLine("Player 1 wins");
+            Console.WriteLine("Player 1 wins");
 			PlayagainTTT(Board1);
 		}
 
@@ -247,45 +247,45 @@ public class Program
 		if (Board1[3] == "O" && Board1[4] == "O" && Board1[5] == "O")
 		{
 			TTTBoard(Board1);
-			Console.WriteLine("Player 2 wins");
+            Console.WriteLine("Player 2 wins");
 			PlayagainTTT(Board1);
 		}
 		if (Board1[6] == "O" && Board1[7] == "O" && Board1[8] == "O")
 		{
 			TTTBoard(Board1);
-			Console.WriteLine("Player 2 wins");
+            Console.WriteLine("Player 2 wins");
 			PlayagainTTT(Board1);
 		}
-		if (Board1[0] == "O" && Board1[5] == "O" && Board1[6] == "O")
+		if (Board1[0] == "O" && Board1[3] == "O" && Board1[6] == "O")
 		{
 			TTTBoard(Board1);
-			Console.WriteLine("Player 2 wins");
+            Console.WriteLine("Player 2 wins");
 			PlayagainTTT(Board1);
 		}
 		if (Board1[1] == "O" && Board1[4] == "O" && Board1[7] == "O")
 		{
 			TTTBoard(Board1);
-			Console.WriteLine("Player 2 wins");
+            Console.WriteLine("Player 2 wins");
 			PlayagainTTT(Board1);
 		}
 		if (Board1[2] == "O" && Board1[5] == "O" && Board1[8] == "O")
 		{
 			TTTBoard(Board1);
-			Console.WriteLine("Player 2 wins");
+            Console.WriteLine("Player 2 wins");
 			PlayagainTTT(Board1);
 		}
 		if (Board1[0] == "O" && Board1[4] == "O" && Board1[8] == "O")
 		{
 			TTTBoard(Board1);
-			Console.WriteLine("Player 2 wins");
+            Console.WriteLine("Player 2 wins");
 			PlayagainTTT(Board1);
 		}
 		if (Board1[2] == "O" && Board1[4] == "O" && Board1[6] == "O")
-		{
+        {
 			TTTBoard(Board1);
-			Console.WriteLine("Player 2 wins");
+            Console.WriteLine("Player 2 wins");
 			PlayagainTTT(Board1);
-		}
+        }
 		else if (Board1[0] != "a" && Board1[1] != "b" && Board1[2] != "c" && Board1[3] != "d" && Board1[4] != "e" && Board1[5] != "f" && Board1[6] != "g" && Board1[7] != "h" && Board1[8] != "i")
 		{
 			TTTBoard(Board1);
@@ -296,7 +296,7 @@ public class Program
 	}
 
 	public static void TTTBoard(string[] Board1)
-	{
+    {
 		Console.Write(Board1[0] + "  ");
 		Console.Write(Board1[1] + "  ");
 		Console.WriteLine(Board1[2]);
@@ -438,7 +438,7 @@ public class Program
 		else
 		{
 			Console.WriteLine("Please choose a valid answer");
-			PlayagainTTT(Board1);
+			Playagain();
 		}
 	}
 
